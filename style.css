@@ -15,6 +15,7 @@
 }
 
 *{box-sizing:border-box;margin:0;padding:0;}
+[hidden]{display:none !important;}
 html{scroll-behavior:smooth;}
 body{
   background:var(--ivory);
@@ -56,6 +57,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:500;color:var(--ink);}
 .age-gate{
   position:fixed;inset:0;background:var(--ink);color:var(--ivory);
   display:flex;align-items:center;justify-content:center;z-index:200;padding:24px;
+  overflow-y:auto;
 }
 .age-gate-card{max-width:420px;text-align:center;}
 .age-gate-mark{
@@ -68,6 +70,8 @@ h1,h2,h3{font-family:var(--font-display);font-weight:500;color:var(--ink);}
 .age-gate-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
 .age-gate .btn-ghost{color:var(--ivory);border-color:#5C564A;}
 .age-gate .btn-ghost:hover{background:rgba(255,255,255,.08);color:var(--ivory);}
+.age-gate .btn-gold{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+.age-gate .btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light);}
 
 /* Header */
 .site-header{
